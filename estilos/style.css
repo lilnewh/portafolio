@@ -1,0 +1,19 @@
+/*INSERTAMOS FUENTES DE GOoGLE*/ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); 
+/*CSS VARIABLES*/ 
+:root{ 
+    --header-height: 3.5rem; 
+    /*COLORES*/ 
+    --primary-color: #4a4a4a; 
+    --primary-color-alt: #575757; 
+    --linear-gradient: linear-gradient(54deg, rgba(96,96,96,0.7)34%, rgba(96,96,96,0.70)100%); --title-color: #4a4a4a; 
+    --text-color: #555; 
+    --text-color-alt: #999; 
+    --bg-color: #fff; 
+    --bg-color-alt: #e9ecef; 
+    --border-color: #f1f1f1; 
+    /*FUENTE Y TIPO GRAFIA*/
+    --roboto-font:'Roboto', san-serif; 
+    --mono-font: 'Roboto Mono', monospace; 
+    --font-japanese: 'Noto Sans JP', sans-serif;
+}
