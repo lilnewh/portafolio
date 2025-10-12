@@ -100,6 +100,16 @@ textarea,input{
     font-size: var(--fs-sm);
     line-height: 1.43em;
 }
+.text-xs{
+    font-size: var(--fs-xs);
+    line-height: 1.5rem;
+}
+.skills_title,
+.resumen_title{
+    color: var(--text-color-alt);
+    letter-spacing: 0.4em;
+    margin-bottom: 2.8em;
+}
 /*HEADER*/
 .header{
     position: absolute;
@@ -284,8 +294,7 @@ textarea,input{
     animation: service-dot 2s linear infinite;
     animation-play-state: paused;
 }
-.services_item:hover,
-.services_icon{
+.services_item:hover .services_dot{ 
     animation-play-state: running;
 }
 @keyframes service-dot{
@@ -302,8 +311,74 @@ textarea,input{
     background-color: var(--tittle-color);
     border-radius: 50%;
     position: absolute;
-    left: 0.9rem;
+    left: 0.4rem;
+    top: 0.4rem;
 }
 .services_title{
     margin-bottom: 0.8rem;
+}
+/*ESTILOS RESUMEN*/
+.resumen_container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.75rem;
+}
+.resumen_title{
+    color: var(--text-color-alt);
+    letter-spacing: 0.4em;
+    margin-bottom: 2.8em;
+}
+.resumen_item{
+    border-left: 2px solid var(--primary-color);
+    padding-left: 1.6rem;
+    position: relative;
+}
+.resumen_item:not(:last-child){
+    padding-bottom: 1.8rem;
+}
+.resumen_item::before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    position: absolute;
+    left: -0.56rem;
+    background-color: var(--bg-color);
+}
+.resumen_subtitle{
+    color: var(--text-color-alt);
+    margin-bottom: 0.36em;
+}
+.resumen_data{
+    color: var(--text-color-alt);
+    margin-bottom: 0.7em;
+}
+.resumen_description{
+    text-align: justify;
+    color: #444444;
+}
+/*ESTILOS PARA SKILLS*/
+.skills_container{
+    grid-template-columns: repeat(2, 445px);
+    column-gap: 7rem;
+}
+.skills_list{
+    row-gap: 1.8rem;
+}
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.625rem;
+}
+.skills_bar,
+.skills_porcentaje{
+    height: 5px;
+    border-radius: 0.25rem;
+}
+.skills_bar{
+    background-color: var(--bg-color-alt);
+}
+.skills_porcentaje{
+    display: block;
+    background-color: var(--primary-color);
 }
