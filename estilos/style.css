@@ -167,7 +167,7 @@ textarea,input{
 }
 /*SECTION HOME*/
 .home{
-    background: url(../img/imagen\ whatsapp.jpg);
+    background: url(../img/daniel.jpg);
     background-size: cover;
     padding-top: 5.5rem;
     margin-bottom: 2.5rem;
@@ -449,6 +449,15 @@ textarea,input{
     box-shadow: 0 1px 4px rgb(0 0 0 / 14%);
     padding: 0.3rem 0.6rem;
     border-radius: 0.2rem;
+}
+
+.link__tags{
+    transition: 0.3s;
+}
+.link__tags:hover{
+    background-color: #575757;
+    color: #e9ecef;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 .project_link{
     float: right;
